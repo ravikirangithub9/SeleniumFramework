@@ -1,0 +1,17 @@
+
+<suite name="Suite">
+
+<listeners>
+<listener class-name="TestNGListner.TestNGListners"></listener>
+</listeners>
+
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="TestNGListner.ListenersDemo">
+				<methods>
+					<exclude name="test1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 

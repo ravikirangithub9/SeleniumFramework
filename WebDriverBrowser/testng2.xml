@@ -1,0 +1,14 @@
+
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="TestNGListner.TestNGListners">
+		</listener>
+	</listeners>
+
+	<test thread-count="5" name="Test">
+		<packages>
+			<package name="TestNGListner" />
+		</packages>
+	</test> <!-- Test -->
+</suite> <!-- This is how we give comments in xml --> 
