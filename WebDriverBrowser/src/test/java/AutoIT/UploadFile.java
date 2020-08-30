@@ -22,6 +22,9 @@ public class UploadFile {
 		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
+		//Resize window
+	driver.manage().window().setSize(new org.openqa.selenium.Dimension(600,800));
+		
 		driver.get("http://www.tinyupload.com/");
 		driver.findElement(By.xpath("//*[@class=\"pole_plik\"]")).click();
 		Runtime.getRuntime().exec("C:\\AutoIT Scripts\\FileUploadScript.exe");  //need to remember this..to get .exe file of our script
